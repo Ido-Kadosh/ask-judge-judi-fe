@@ -1,13 +1,15 @@
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import AppHeader from './cmps/AppHeader';
+import ChatIndex from './pages/ChatIndex';
 
 function App() {
 	return (
 		<div>
 			<BrowserRouter>
+				<AppHeader />
 				<main>
 					<Routes>
-						<Route path="/" element={<HomePage />}></Route>
+						<Route path="/" element={<ChatIndex />}></Route>
 					</Routes>
 				</main>
 			</BrowserRouter>
